@@ -101,11 +101,10 @@
 		\end{itemize}
 	\end{itemize}
 \end{frame}
-\begin{frame}{Enrollment}
+\begin{frame}{Enrollment I}
 	\begin{itemize}
 		\item zuf\"alliger Wert f\"ur Schl\"ussel $s$, One-Way-Hashfunktion $h(s)$ generiert
 		\item Schl\"ussel $s$ in Hamming-Code $c$ umgeschrieben
-		\item Template (als Bitstring) $x$ XOR $c$ ergibt „Safe“ $w$
 	\end{itemize}
 	\hspace{10mm}\includegraphics[height=5cm]{fcs.png}\\
 	\tiny{Quelle: \textit{\tiny{$https://www.cosy.sbg.ac.at/~uhl/biometrics_slides.pdf$}}}
@@ -126,10 +125,17 @@
 		\item Stellen, an denen Wert 1 ist miteinander verXORen $\rightarrow$ Stellen 7, 6, 3
 		\item 7 	== \textcolor{blue}{1}1\textcolor{green}{1}
 		\item 6 == \textcolor{blue}{1}1\textcolor{green}{0}
-		\item 5 == \textcolor{blue}{1}0\textcolor{green}{1}
-		\item xor == \textcolor{blue}{1}0\textcolor{green}{0} $\rightarrow$ Parit\"atsbits haben Werte \textcolor{red}{1}, \textcolor{red}{0}, \textcolor{red}{0}
+		\item 3 == \textcolor{blue}{0}1\textcolor{green}{1}
+		\item xor == \textcolor{blue}{0}1\textcolor{green}{0} $\rightarrow$ Parit\"atsbits haben Werte \textcolor{red}{1}, \textcolor{red}{0}, \textcolor{red}{0}
 		\item Codewort: 110\textcolor{red}{1}1\textcolor{red}{00}
 	\end{itemize}
+\end{frame}
+\begin{frame}{Enrollment II}
+	\begin{itemize}
+		\item Template (als Bitstring) $x$ XOR $c$ ergibt „Safe“ $w$
+	\end{itemize}
+	\hspace{10mm}\includegraphics[height=5cm]{fcs.png}\\
+	\tiny{Quelle: \textit{\tiny{$https://www.cosy.sbg.ac.at/~uhl/biometrics_slides.pdf$}}}
 \end{frame}
 \begin{frame}{Authentication I}
 	\begin{itemize}
